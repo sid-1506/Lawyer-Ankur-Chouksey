@@ -84,7 +84,7 @@ export default function DisclaimerModal({ isOpen, allowCloseDirectly, onClose })
       <div className="modal-dialog">
         <div className="modal-header">
           <img
-            src="img/Logo.jpeg"
+            src="/img/Logo.jpeg"
             alt="Ankur Chouksey & Associates, Company Secretaries"
             className="modal-logo"
             width="220"

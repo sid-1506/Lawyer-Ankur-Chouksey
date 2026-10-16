@@ -44,7 +44,7 @@ export default function Hero() {
             <div className="hero-image-card">
               <div className="hero-image-frame">
                 <img
-                  src="img/Owner.jpeg"
+                  src="/img/Owner.jpeg"
                   alt="CS Ankur Chouksey, Proprietor of Ankur Chouksey & Associates"
                   className="hero-owner-img"
                   width="460"

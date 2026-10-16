@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { servicesData } from '../data/servicesData';
-import ServiceCard from './ServiceCard';
+import { servicesData } from '../../data/servicesData';
+import ServiceCard from '../ui/ServiceCard';
 
 export default function Services() {
   const [openServices, setOpenServices] = useState([]);

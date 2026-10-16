@@ -1,15 +1,15 @@
 import { useState, useEffect } from 'react';
-import DisclaimerModal from './components/DisclaimerModal';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Services from './components/Services';
-import MissionVision from './components/MissionVision';
-import Team from './components/Team';
-import WhyUs from './components/WhyUs';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import FloatingContact from './components/FloatingContact';
+import DisclaimerModal from './components/ui/DisclaimerModal';
+import Navbar from './components/layout/Navbar';
+import Hero from './components/sections/Hero';
+import About from './components/sections/About';
+import Services from './components/sections/Services';
+import MissionVision from './components/sections/MissionVision';
+import Team from './components/sections/Team';
+import WhyUs from './components/sections/WhyUs';
+import Contact from './components/sections/Contact';
+import Footer from './components/layout/Footer';
+import FloatingContact from './components/ui/FloatingContact';
 import { useScrollReveal } from './hooks/useScrollReveal';
 
 export default function App() {

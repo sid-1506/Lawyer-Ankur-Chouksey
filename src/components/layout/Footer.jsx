@@ -7,7 +7,7 @@ export default function Footer({ onOpenDisclaimer }) {
         <div className="footer-top">
           <div className="footer-brand">
             <img
-              src="img/Logo.jpeg"
+              src="/img/Logo.jpeg"
               alt="Ankur Chouksey & Associates, Company Secretaries"
               className="footer-logo"
               width="220"

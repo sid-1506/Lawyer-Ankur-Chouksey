@@ -91,7 +91,7 @@ export default function Navbar() {
       <div className="container nav-container">
         <a href="#home" className="brand-link" aria-label="Ankur Chouksey & Associates - Home">
           <img
-            src="img/Logo.jpeg"
+            src="/img/Logo.jpeg"
             alt="Ankur Chouksey & Associates, Company Secretaries"
             className="brand-logo"
             width="200"
