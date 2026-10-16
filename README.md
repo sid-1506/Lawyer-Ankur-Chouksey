@@ -1,12 +1,13 @@
 # ⚖️ Ankur Chouksey & Associates (ACA)
 ### *Company Secretaries in Practice | Corporate Legal & Regulatory Advisory*
 
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
+[![Vite](https://img.shields.io/badge/Vite-6.x-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Responsive Design](https://img.shields.io/badge/Responsive-Mobile--First-success?style=for-the-badge)](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
 [![Compliance](https://img.shields.io/badge/Compliance-ICSI%20Guidelines%202020-blue?style=for-the-badge)](https://www.icsi.edu)
-[![Zero Dependencies](https://img.shields.io/badge/Dependencies-0%20(Pure%20Vanilla)-brightgreen?style=for-the-badge)]()
 
 ---
 
@@ -14,7 +15,7 @@
 
 **Ankur Chouksey & Associates** is a premier corporate legal and company secretarial firm based in **Bhopal, Madhya Pradesh, India**. With extensive experience in corporate advisory, secretarial audits, statutory compliance, foreign exchange regulations, and commercial litigation support, the firm delivers trusted solutions for businesses, startups, and established corporate houses across India and internationally.
 
-This repository houses the complete, production-grade official web portal of the firm. The website has been engineered to deliver a clean, corporate aesthetic with uncompromising performance, accessibility (A11y), and strict adherence to the regulatory guidelines laid down by the **Institute of Company Secretaries of India (ICSI)**.
+This repository houses the complete, production-grade official web portal of the firm. Built using **React 19 + Vite** with modular components, the site retains the pure corporate aesthetic, accessibility (A11y), and strict adherence to the regulatory guidelines laid down by the **Institute of Company Secretaries of India (ICSI)**.
 
 ---
 
@@ -39,9 +40,9 @@ This repository houses the complete, production-grade official web portal of the
     9. **Tribunal & Authority Representation** (NCLT, Regional Director, ROC, RD, SEBI)
     10. **Legal Drafting & Commercial Contracts** (SHA, SPA, JV agreements, commercial deeds)
 
-- **⚡ Zero-Dependency Vanilla Architecture**
-  - 100% framework-free stack (HTML5 + Vanilla CSS3 + Modern ES6+ JavaScript).
-  - Ultra-fast load times, zero build overhead, and instantaneous page renders.
+- **⚡ Modern Component-Driven Architecture (React 19 + Vite)**
+  - Blazing-fast development server with instant Hot Module Replacement (HMR).
+  - Highly organized modular structure (`layout/`, `sections/`, `ui/`, `hooks/`, `data/`).
   - Lightweight, hand-crafted inline SVG iconography (no bulky icon libraries).
 
 - **📱 Fully Responsive & Cross-Browser Optimized**
@@ -69,21 +70,36 @@ This repository houses the complete, production-grade official web portal of the
 
 ```text
 Lawyer-Ankur-Chouksey/
-├── index.html         # Main semantic HTML5 single-page application structure
-├── style.css          # Design system, CSS variables, typography, and responsive styles
-├── script.js         # Core JS: Disclaimer modal, accordions, mobile menu, animations & form
-├── img/               # Brand visual assets
-│   ├── Logo.jpeg      # Official firm logo
-│   └── Owner.jpeg     # Executive portrait / Founder profile photo
-├── .gitignore         # Git ignore file (excludes OS temp files like .DS_Store)
-└── README.md          # Comprehensive documentation & setup guide
+├── public/
+│   ├── favicon.svg           # Scalable SVG favicon
+│   ├── icons.svg             # Brand iconography
+│   └── img/                  # Brand visual assets
+│       ├── Logo.jpeg         # Official firm logo
+│       └── Owner.jpeg        # Executive portrait / Founder profile photo
+├── src/
+│   ├── assets/               # Bundled static assets
+│   ├── components/
+│   │   ├── layout/           # Global structural components (Navbar, Footer)
+│   │   ├── sections/         # Main landing sections (Hero, Services, About, etc.)
+│   │   └── ui/               # Reusable UI widgets (ServiceCard, DisclaimerModal, etc.)
+│   ├── data/                 # Static data sources (servicesData.js)
+│   ├── hooks/                # Custom React hooks (useScrollReveal.js)
+│   ├── styles/               # Global CSS stylesheet (style.css)
+│   ├── App.jsx               # Main application component
+│   └── main.jsx              # React DOM render root
+├── .gitignore                # Root gitignore rules
+├── .oxlintrc.json            # Oxlint configuration
+├── index.html                # Vite HTML entry point with complete SEO metadata
+├── LICENSE                   # MIT License
+├── package.json              # NPM package dependencies and scripts
+├── package-lock.json         # NPM dependency lockfile
+├── README.md                 # Project documentation
+└── vite.config.js            # Vite bundler configuration
 ```
 
 ---
 
 ## 🚀 Getting Started
-
-No compilers, node modules, or bundlers are required. The project runs directly in any modern browser.
 
 ### 1. Clone the Repository
 ```bash
@@ -91,48 +107,41 @@ git clone https://github.com/sid-1506/Lawyer-Ankur-Chouksey.git
 cd Lawyer-Ankur-Chouksey
 ```
 
-### 2. Run Locally
-
-#### Option A: Direct Browser Preview
-Simply double-click `index.html` or open it with your favorite browser:
-- **macOS:** `open index.html`
-- **Linux:** `xdg-open index.html`
-- **Windows:** `start index.html`
-
-#### Option B: VS Code Live Server (Recommended)
-1. Install the **Live Server** extension in VS Code.
-2. Right-click on `index.html` and select **"Open with Live Server"**.
-3. View the site at `http://127.0.0.1:5500`.
-
-#### Option C: Python Simple HTTP Server
+### 2. Install Dependencies
 ```bash
-# Python 3.x
-python3 -m http.server 8000
+npm install
 ```
-Open `http://localhost:8000` in your web browser.
 
-#### Option D: Node.js `npx serve`
+### 3. Run Locally (Development)
 ```bash
-npx serve .
+npm run dev
+```
+Open `http://localhost:5173` in your browser.
+
+### 4. Build for Production
+```bash
+npm run build
+```
+The optimized production bundle will be generated in the `dist/` directory.
+
+### 5. Preview Production Build
+```bash
+npm run preview
 ```
 
 ---
 
-## 🌐 Deploying to GitHub Pages
+## 🌐 Deploying to Vercel
 
-You can host this website completely free of cost with GitHub Pages in less than a minute:
+This project is fully ready for zero-config deployment on **[Vercel](https://vercel.com)**:
 
-1. Push your repository to GitHub (see the [Git Push Guide](#-github-push-guide) below).
-2. Go to your GitHub repository in your browser.
-3. Click on **Settings** (⚙️) > **Pages** in the left sidebar.
-4. Under **Build and deployment**:
-   - **Source**: Select `Deploy from a branch`
-   - **Branch**: Select `main` (or `master`) and `/ (root)`
-5. Click **Save**.
-6. Within 1–2 minutes, your website will be live at:
-   ```
-   https://<your-username>.github.io/<repository-name>/
-   ```
+1. Import the repository in your Vercel Dashboard.
+2. Vercel automatically detects the **Vite** preset:
+   - **Framework Preset**: `Vite`
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist`
+   - **Install Command**: `npm install`
+3. Click **Deploy**. Your site will be live on an SSL-secured URL.
 
 ---
 
