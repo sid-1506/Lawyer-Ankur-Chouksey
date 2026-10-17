@@ -30,6 +30,7 @@ export default function Footer({ onOpenDisclaimer }) {
               <li><a href="#team">Our Team</a></li>
               <li><a href="#why-us">Why Us</a></li>
               <li><a href="#contact">Contact</a></li>
+              <li><a href="#blog">Blog</a></li>
             </ul>
           </div>
 

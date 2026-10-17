@@ -8,6 +8,7 @@ import MissionVision from './components/sections/MissionVision';
 import Team from './components/sections/Team';
 import WhyUs from './components/sections/WhyUs';
 import Contact from './components/sections/Contact';
+import Blog from './components/sections/Blog';
 import Footer from './components/layout/Footer';
 import FloatingContact from './components/ui/FloatingContact';
 import { useScrollReveal } from './hooks/useScrollReveal';
@@ -60,6 +61,7 @@ export default function App() {
         <Team />
         <WhyUs />
         <Contact />
+        <Blog />
       </main>
 
       {/* Footer */}
