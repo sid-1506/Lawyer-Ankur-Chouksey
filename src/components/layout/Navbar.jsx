@@ -8,6 +8,7 @@ const NAV_ITEMS = [
   { href: '#team', label: 'Team', id: 'team' },
   { href: '#why-us', label: 'Why Us', id: 'why-us' },
   { href: '#contact', label: 'Contact', id: 'contact' },
+  { href: '#blog', label: 'Blog', id: 'blog' },
 ];
 
 export default function Navbar() {
